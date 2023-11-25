@@ -61,7 +61,7 @@ def newAnalyzer():
             'components': None,
             'paths': None,
             'search': {
-                'dfs': None
+                'dfs': None,
                 'bfs': None
             }
         }
