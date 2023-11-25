@@ -56,7 +56,6 @@ searchMethod = None
 def printMenu():
     print("\n")
     print("*******************************************")
-    # TODO Lab 11, asegurarse de completar las opciones 5, 9 y 10
     print("Bienvenido")
     print("1- Inicializar Analizador")
     print("2- Cargar información de buses de singapur")
@@ -94,8 +93,9 @@ def optionFour(cont, initialStation):
 
 
 def optionFive(cont, initialStation, searchMethod):
-    # TODO Lab 11, conectar con la funcion del controller searchPaths
-    pass
+    haspath = None
+    print(haspath)
+
 
 
 def optionSix(cont, initialStation, destStation):
@@ -124,13 +124,11 @@ def optionEight(cont):
 
 
 def optionNine(cont, destStation, searchMethod):
-    # TODO Lab 11, conectar con la funcion del controller hasSearchPath
     haspath = None
     print(haspath)
 
 
 def optionTen(cont, destStation, searchMethod):
-    # TODO Lab 11, conectar con la funcion del controller searchPathTo
     path = None
     if path is not None:
         pass
@@ -165,9 +163,7 @@ def thread_cycle():
             optionFour(cont, initialStation)
 
         elif int(inputs) == 5:
-            # TODO Lab 11, completar inputs opt 5, searchMethod, initialStation
-            pass
-
+            optionFive(cont, initialStation, searchMethod)
         elif int(inputs) == 6:
             destStation = input("Estación destino (Ej: 15151-10): ")
             optionSix(cont, initialStation, destStation)
@@ -180,13 +176,9 @@ def thread_cycle():
             optionEight(cont)
 
         elif int(inputs) == 9:
-            # TODO Lab 11, completar inputs opt 9, destStation
-            pass
-
+            optionNine(cont, destStation, searchMethod)
         elif int(inputs) == 10:
-            # TODO Lab 11, completar inputs opt 10, destStation
-            pass
-
+            optionTen(cont, destStation, searchMethod)
         else:
             sys.exit(0)
 

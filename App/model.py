@@ -220,10 +220,8 @@ def searchPaths(analyzer, initialStation, method):
     Returns:
         dict: devuelve el analyzer del modelo
     """
-    # TODO Lab 11, ejecutar DepthFirstSearch de dfs
     if method == "dfs":
         pass
-    # TODO Lab 11, ejecutar BreadhtFisrtSearch de bfs
     elif method == "bfs":
         pass
     return analyzer
@@ -239,10 +237,8 @@ def hasSearchPath(analyzer, destStation, method):
         destStation (vertice): estacion de destino para el recorrido
         method (str, optional): algoritmo de busqueda. Por defecto es "dfs"
     """
-    # TODO Lab 11, ejecutar hasPathTo por dfs
     if method == "dfs":
         return None
-    # TODO Lab 11, ejecutar hasPathTo por bfs
     elif method == "bfs":
         return None
 
@@ -261,10 +257,8 @@ def searchPathTo(analyzer, destStation, method):
         stack: devuele una pila con el camino encontrado en la busqueda.
     """
     path = None
-    # TODO Lab 11, ejecutar pathTo por dfs
     if method == "dfs":
         pass
-    # TODO Lab 11, ejecutar pathTo por bfs
     elif method == "bfs":
         pass
     return path

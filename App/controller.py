@@ -128,14 +128,15 @@ def minimumCostPath(analyzer, destStation):
     return model.minimumCostPath(analyzer, destStation)
 
 
+
 def searchPaths(analyzer, initialStation, searchMethod):
     """
     Calcula todos los recorridos por "dfs" o "bfs" de initialStation a
-    todas las otras estaciones del sistemas
+    todas las otras estaciones del sistema
     """
-    # TODO Lab 11, conectar con la funcion del model searchPaths
-    
+
     return None
+    
 
 
 def hasSearchPath(analyzer, destStation, searchMethod):
@@ -143,15 +144,23 @@ def hasSearchPath(analyzer, destStation, searchMethod):
     Informa si existe un camino entre initialStation y destStation segun
     el metodo de busqueda ("bfs" o "dfs")
     """
-    # TODO Lab 11, conectar con la funcion del model hasSearchPath
-    return None
+
+    if searchMethod.lower() == 'dfs':
+        paths = searchPaths(analyzer)
+    elif searchMethod.lower() == 'bfs':
+        paths = searchPaths(analyzer)
+    else:
+        print("Invalid search method. Please use 'dfs' or 'bfs'.")
+        return None
+    
+    return list(paths)
+
 
 
 def searchPathTo(analyzer, destStation, searchMethod):
     """
     Retorna el camino de busqueda entre initialStation y destStation
     """
-    # TODO Lab 11, conectar con la funcion del model searchPathTo
     return model.searchPathTo(analyzer, destStation, searchMethod)
 
 
