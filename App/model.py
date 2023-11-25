@@ -60,6 +60,10 @@ def newAnalyzer():
             'connections': None,
             'components': None,
             'paths': None,
+            'search': {
+                'dfs': None
+                'bfs': None
+            }
         }
 
         analyzer['stops'] = m.newMap(numelements=14000,
